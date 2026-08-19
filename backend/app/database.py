@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "mysql+pymysql://root:@localhost:3308/otp_checkout_db")
+DATABASE_URL = os.getenv("MYSQL_URL")
 
 engine = create_engine(
     DATABASE_URL,
